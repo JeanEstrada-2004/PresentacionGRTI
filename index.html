@@ -561,15 +561,82 @@
         <div class="slide-body">
           <h2>La operación requiere responsabilidades explícitas</h2>
           <p class="subtitle">La matriz RACI separa propiedad funcional, análisis, operación y soporte técnico.</p>
-          <div class="raci-grid">
-            <div><strong>Definir catálogos</strong><span><b>A:</b> GSC · <b>R:</b> Planeamiento · <b>C:</b> Operaciones / Analista</span></div>
-            <div><strong>Cargar reportes</strong><span><b>A:</b> Planeamiento · <b>R:</b> Analista · <b>C:</b> Operaciones · <b>I:</b> OTICS</span></div>
-            <div><strong>Validar calidad</strong><span><b>A:</b> Planeamiento · <b>R:</b> Analista · <b>C:</b> OTICS</span></div>
-            <div><strong>Usuarios y roles</strong><span><b>A:</b> GSC · <b>R:</b> OTICS · <b>C:</b> Analista</span></div>
-            <div><strong>Incidente técnico</strong><span><b>R/A:</b> OTICS · <b>C:</b> Analista · <b>I:</b> GSC</span></div>
-            <div><strong>Backups y restauración</strong><span><b>R/A:</b> OTICS · <b>C:</b> Planeamiento / Analista</span></div>
-            <div><strong>Revisar SLA</strong><span><b>A:</b> GSC · <b>R:</b> OTICS · <b>C:</b> Planeamiento / Analista</span></div>
-            <div><strong>Informar a CODISEC</strong><span><b>A:</b> GSC · <b>R:</b> Planeamiento · <b>C:</b> Operaciones / Analista</span></div>
+          <div class="raci-board">
+            <div class="raci-legend" aria-label="Leyenda RACI">
+              <span><b>R</b> Responsable operativo</span>
+              <span><b>A</b> Responsable final</span>
+              <span><b>C</b> Consultado</span>
+              <span><b>I</b> Informado</span>
+            </div>
+            <table class="raci-table">
+              <thead>
+                <tr>
+                  <th>Proceso</th>
+                  <th>GSC</th>
+                  <th>Planeamiento</th>
+                  <th>Analista</th>
+                  <th>OTICS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Definir catálogos</td>
+                  <td><span class="raci-pill accountable">A</span></td>
+                  <td><span class="raci-pill responsible">R</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill informed">I</span></td>
+                </tr>
+                <tr>
+                  <td>Cargar reportes</td>
+                  <td><span class="raci-pill informed">I</span></td>
+                  <td><span class="raci-pill accountable">A</span></td>
+                  <td><span class="raci-pill responsible">R</span></td>
+                  <td><span class="raci-pill informed">I</span></td>
+                </tr>
+                <tr>
+                  <td>Validar calidad de datos</td>
+                  <td><span class="raci-pill informed">I</span></td>
+                  <td><span class="raci-pill accountable">A</span></td>
+                  <td><span class="raci-pill responsible">R</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                </tr>
+                <tr>
+                  <td>Administrar usuarios y roles</td>
+                  <td><span class="raci-pill accountable">A</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill responsible">R</span></td>
+                </tr>
+                <tr>
+                  <td>Incidente técnico</td>
+                  <td><span class="raci-pill informed">I</span></td>
+                  <td><span class="raci-pill informed">I</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill accountable">R/A</span></td>
+                </tr>
+                <tr>
+                  <td>Backups y restauración</td>
+                  <td><span class="raci-pill informed">I</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill accountable">R/A</span></td>
+                </tr>
+                <tr>
+                  <td>Revisar SLA</td>
+                  <td><span class="raci-pill accountable">A</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill responsible">R</span></td>
+                </tr>
+                <tr>
+                  <td>Informar a CODISEC</td>
+                  <td><span class="raci-pill accountable">A</span></td>
+                  <td><span class="raci-pill responsible">R</span></td>
+                  <td><span class="raci-pill consulted">C</span></td>
+                  <td><span class="raci-pill informed">I</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
