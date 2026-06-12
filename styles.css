@@ -193,6 +193,16 @@ body {
   grid-template-columns: minmax(320px, 0.7fr) minmax(0, 1.2fr);
 }
 
+.compact-spec {
+  align-content: start;
+  align-items: start;
+  gap: 14px;
+}
+
+.compact-spec h2 {
+  font-size: clamp(1.62rem, 2.2vw, 2.05rem);
+}
+
 .title-grid {
   grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.64fr);
   align-items: center;
@@ -750,6 +760,29 @@ h3 {
 
 .next-step-grid span:nth-child(4) {
   border-left-color: var(--gold);
+}
+
+.system-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 0 18px;
+  border: 1px solid rgba(12, 88, 87, 0.32);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--teal), var(--blue));
+  color: #ffffff;
+  font-size: 0.94rem;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.system-link:focus-visible,
+.system-link:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .role-grid {
@@ -1468,6 +1501,12 @@ li {
   margin-top: 16px;
 }
 
+.compact-spec .spec-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 12px;
+}
+
 .spec-list div {
   padding: 10px 14px;
   border: 1px solid var(--border);
@@ -1477,12 +1516,23 @@ li {
   box-shadow: var(--shadow-xs);
 }
 
+.compact-spec .spec-list div {
+  min-height: 118px;
+  padding: 8px 12px;
+}
+
+.compact-spec .spec-list span {
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
 .spec-list strong {
   margin-bottom: 4px;
 }
 
 .spec-list span {
-  font-size: 0.9rem;
+  font-size: 0.84rem;
+  line-height: 1.28;
 }
 
 .spec-list div:nth-child(2),
@@ -1493,6 +1543,20 @@ li {
 .spec-list div:nth-child(3),
 .spec-list div:nth-child(6) {
   border-left-color: var(--green);
+}
+
+.tech-rationale {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid rgba(12, 88, 87, 0.2);
+  border-left: 5px solid var(--gold);
+  border-radius: var(--radius);
+  background: #ffffff;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.34;
+  box-shadow: var(--shadow-xs);
 }
 
 .comparison-table,
@@ -1547,8 +1611,18 @@ li {
   font-size: 1.34rem;
 }
 
+.budget-card span {
+  font-size: 0.88rem;
+  line-height: 1.3;
+}
+
 .metric-card strong {
   font-size: 1.8rem;
+}
+
+.budget-note {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .scenario-lane {

@@ -416,11 +416,11 @@
             <h2>Flujo general de operación técnica</h2>
             <ul class="bullet-list dense">
               <li>PC operador, PC analista y acceso de gerencia.</li>
-              <li>Red municipal o Internet seguro mediante HTTPS/VPN.</li>
-              <li>Firewall cloud, VM Ubuntu LTS, Nginx y FastAPI.</li>
-              <li>PostgreSQL/PostGIS para incidencias, catálogos y auditoría.</li>
-              <li>Backups remotos, snapshots y copia secundaria opcional.</li>
-              <li>Monitoreo con UptimeRobot y Netdata administrado por OTICS.</li>
+              <li>Red municipal o Internet seguro mediante HTTPS/VPN para proteger credenciales y consultas desde sedes autorizadas.</li>
+              <li>Firewall cloud, VM Ubuntu LTS, Nginx y FastAPI para separar exposición web, aplicación y reglas de acceso.</li>
+              <li>PostgreSQL/PostGIS para incidencias, catálogos, auditoría y futuras consultas geográficas.</li>
+              <li>Backups remotos, snapshots y copia secundaria opcional para cubrir error humano y caída del servidor.</li>
+              <li>Monitoreo con UptimeRobot y Netdata administrado por OTICS para alertar disponibilidad, CPU, RAM y disco antes de afectar el servicio.</li>
             </ul>
           </div>
           <figure class="figure-frame diagram">
@@ -439,16 +439,16 @@
           <span class="kicker">Arquitectura de despliegue objetivo</span>
           <span class="section-number">14</span>
         </div>
-        <div class="slide-body two-column wide-right">
+        <div class="slide-body two-column wide-right compact-spec">
           <div>
             <h2>Arquitectura inicial no sobredimensionada</h2>
             <div class="spec-list">
-              <div><strong>VM cloud</strong><span>2 vCPU, 4 GB RAM, 80 GB SSD</span></div>
-              <div><strong>Sistema</strong><span>Ubuntu Server 24.04 LTS</span></div>
-              <div><strong>Aplicación</strong><span>FastAPI + Jinja2 detrás de Nginx</span></div>
-              <div><strong>Base de datos</strong><span>PostgreSQL 16 con opción PostGIS</span></div>
-              <div><strong>Seguridad</strong><span>HTTPS 443, firewall cloud y reglas IP</span></div>
-              <div><strong>Continuidad</strong><span>pg_dump diario, snapshot semanal y alertas</span></div>
+              <div><strong>VM cloud</strong><span>2 vCPU, 4 GB RAM y 80 GB SSD: cubre piloto institucional, carga moderada y 5 a 15 usuarios sin pagar capacidad ociosa.</span></div>
+              <div><strong>Sistema</strong><span>Ubuntu Server 24.04 LTS: estable, sin licencia adicional y con soporte extendido para operación municipal.</span></div>
+              <div><strong>Aplicación</strong><span>FastAPI + Jinja2 detrás de Nginx: permite APIs, validación de archivos y proxy HTTPS en una arquitectura simple.</span></div>
+              <div><strong>Base de datos</strong><span>PostgreSQL 16 con opción PostGIS: adecuado para datos relacionales, auditoría y análisis territorial.</span></div>
+              <div><strong>Seguridad</strong><span>HTTPS 443, firewall cloud y reglas IP: cifran el tráfico y reducen la superficie expuesta a Internet.</span></div>
+              <div><strong>Continuidad</strong><span>pg_dump diario, snapshot semanal y alertas: combina recuperación lógica y recuperación del servidor completo.</span></div>
             </div>
           </div>
           <figure class="figure-frame diagram">
@@ -710,13 +710,14 @@
         <div class="slide-body">
           <h2>Escenario base con costos controlados</h2>
           <div class="budget-grid">
-            <div class="budget-card metric-card"><strong>2 vCPU</strong><span>Procesamiento base para carga, validación y consultas.</span></div>
-            <div class="budget-card metric-card"><strong>4 GB RAM</strong><span>Capacidad inicial para 5 a 15 usuarios concurrentes.</span></div>
-            <div class="budget-card metric-card"><strong>80 GB SSD</strong><span>Base, logs, archivos fuente y crecimiento inicial.</span></div>
-            <div class="budget-card"><strong>S/ 3,200.00</strong><span>Costo único: configuración, carga inicial, capacitación y documentación.</span></div>
-            <div class="budget-card"><strong>S/ 507.80</strong><span>Costo mensual base: cloud, backups, dominio y soporte mínimo.</span></div>
-            <div class="budget-card"><strong>S/ 6,093.56</strong><span>Costo anual recurrente estimado para operación inicial.</span></div>
+            <div class="budget-card metric-card"><strong>2 vCPU</strong><span>Procesamiento base para carga, validación y consultas concurrentes; evita sobredimensionar una primera fase.</span></div>
+            <div class="budget-card metric-card"><strong>4 GB RAM</strong><span>Margen para aplicación, PostgreSQL y carga de archivos sin separar servicios todavía.</span></div>
+            <div class="budget-card metric-card"><strong>80 GB SSD</strong><span>No es solo registros: cubre base, índices, logs, archivos fuente, exportaciones y respaldos iniciales.</span></div>
+            <div class="budget-card"><strong>S/ 3,200.00</strong><span>Costo único por configuración, carga inicial, capacitación y documentación de operación.</span></div>
+            <div class="budget-card"><strong>S/ 507.80</strong><span>Costo mensual base para cloud, backups, dominio y soporte mínimo durante la estabilización.</span></div>
+            <div class="budget-card"><strong>S/ 6,093.56</strong><span>Referencia anual recurrente para sostener el servicio antes de una ampliación institucional.</span></div>
           </div>
+          <p class="tech-rationale budget-note">El dimensionamiento debe revisarse si se superan 5,000 registros al mes, crece la georreferenciación o el uso concurrente pasa de 15 usuarios.</p>
           <div class="scenario-lane">
             <div><strong>Bajo</strong><span>500 registros/mes · 60 MB/año · 10 GB recomendados</span></div>
             <div><strong>Medio</strong><span>2,000 registros/mes · 240 MB/año · 20 a 30 GB</span></div>
@@ -777,6 +778,7 @@
               <span>Backups probados</span>
               <span>Modelo predictivo versionado</span>
             </div>
+            <a class="system-link" href="https://safedata-intelligence.onrender.com" target="_blank" rel="noopener noreferrer">Acceder al sistema</a>
           </div>
           <div class="indicator-panel">
             <span class="panel-label">Metas iniciales</span>
