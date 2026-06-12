@@ -371,7 +371,16 @@ h3 {
 .problem-grid,
 .alternative-grid,
 .module-map,
-.scenario-lane {
+.scenario-lane,
+.framework-grid,
+.maturity-grid,
+.analytics-grid,
+.security-grid,
+.raci-grid,
+.service-level-grid,
+.continuity-grid,
+.stakeholder-grid,
+.next-step-grid {
   display: grid;
   gap: 12px;
 }
@@ -397,6 +406,16 @@ h3 {
 .alternative-card,
 .module-map div,
 .scenario-lane div,
+.framework-grid div,
+.maturity-card,
+.analytics-grid div,
+.security-grid div,
+.raci-grid div,
+.service-level-grid div,
+.continuity-grid div,
+.stakeholder-grid div,
+.monitor-panel,
+.next-step-grid span,
 .mini-table,
 .comparison-table,
 .scenario-table {
@@ -419,7 +438,15 @@ h3 {
 .spec-list strong,
 .metric strong,
 .problem-card strong,
-.scenario-lane strong {
+.scenario-lane strong,
+.framework-grid strong,
+.maturity-grid strong,
+.analytics-grid strong,
+.security-grid strong,
+.raci-grid strong,
+.service-level-grid strong,
+.continuity-grid strong,
+.stakeholder-grid strong {
   display: block;
   margin-bottom: 7px;
   color: var(--text);
@@ -436,7 +463,15 @@ h3 {
 .metric span,
 .problem-card span,
 .alternative-card span,
-.scenario-lane span {
+.scenario-lane span,
+.framework-grid span,
+.maturity-grid span,
+.analytics-grid span,
+.security-grid span,
+.raci-grid span,
+.service-level-grid span,
+.continuity-grid span,
+.stakeholder-grid span {
   color: var(--muted);
   font-size: 0.94rem;
   line-height: 1.36;
@@ -454,6 +489,130 @@ h3 {
   color: var(--text);
   font-size: 1.22rem;
   line-height: 1.36;
+}
+
+.framework-grid,
+.continuity-grid,
+.stakeholder-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.framework-grid div,
+.continuity-grid div,
+.stakeholder-grid div {
+  min-height: 120px;
+  padding: 17px;
+  border-top: 5px solid var(--teal);
+}
+
+.framework-grid div:nth-child(2),
+.framework-grid div:nth-child(5),
+.continuity-grid div:nth-child(2),
+.continuity-grid div:nth-child(5),
+.stakeholder-grid div:nth-child(2),
+.stakeholder-grid div:nth-child(5) {
+  border-top-color: var(--blue);
+}
+
+.framework-grid div:nth-child(3),
+.framework-grid div:nth-child(6),
+.continuity-grid div:nth-child(3),
+.continuity-grid div:nth-child(6),
+.stakeholder-grid div:nth-child(3),
+.stakeholder-grid div:nth-child(6) {
+  border-top-color: var(--green);
+}
+
+.framework-grid div:nth-child(4),
+.continuity-grid div:nth-child(4),
+.stakeholder-grid div:nth-child(4) {
+  border-top-color: var(--gold);
+}
+
+.maturity-grid,
+.analytics-grid,
+.security-grid,
+.service-level-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 20px;
+}
+
+.maturity-card,
+.analytics-grid div,
+.security-grid div,
+.service-level-grid div {
+  min-height: 112px;
+  padding: 17px;
+  border-left: 4px solid var(--teal);
+}
+
+.maturity-card.action,
+.analytics-grid div:nth-child(2),
+.security-grid div:nth-child(2),
+.service-level-grid div:nth-child(2),
+.service-level-grid div:nth-child(5) {
+  border-left-color: var(--blue);
+}
+
+.maturity-card.guard,
+.analytics-grid div:nth-child(3),
+.security-grid div:nth-child(3),
+.service-level-grid div:nth-child(3),
+.service-level-grid div:nth-child(6) {
+  border-left-color: var(--green);
+}
+
+.analytics-grid div:nth-child(4),
+.security-grid div:nth-child(4),
+.service-level-grid div:nth-child(4) {
+  border-left-color: var(--gold);
+}
+
+.monitor-panel {
+  padding: 22px;
+  border-top: 6px solid var(--teal);
+  box-shadow: var(--shadow-sm);
+}
+
+.monitor-panel ul {
+  margin-top: 14px;
+}
+
+.compact-statement {
+  max-width: 100%;
+  padding: 14px 18px;
+  font-size: 1rem;
+}
+
+.next-step-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 22px;
+}
+
+.next-step-grid span {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-left: 4px solid var(--teal);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.next-step-grid span:nth-child(2),
+.next-step-grid span:nth-child(5) {
+  border-left-color: var(--blue);
+}
+
+.next-step-grid span:nth-child(3) {
+  border-left-color: var(--green);
+}
+
+.next-step-grid span:nth-child(4) {
+  border-left-color: var(--gold);
 }
 
 .role-grid {
@@ -868,6 +1027,35 @@ li {
   border-top-color: var(--violet);
 }
 
+.raci-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.raci-grid div {
+  min-height: 112px;
+  padding: 16px;
+  border-left: 4px solid var(--teal);
+}
+
+.raci-grid div:nth-child(2),
+.raci-grid div:nth-child(6) {
+  border-left-color: var(--blue);
+}
+
+.raci-grid div:nth-child(3),
+.raci-grid div:nth-child(7) {
+  border-left-color: var(--green);
+}
+
+.raci-grid div:nth-child(4),
+.raci-grid div:nth-child(8) {
+  border-left-color: var(--gold);
+}
+
+.raci-grid b {
+  color: var(--navy);
+}
+
 .control-grid div {
   min-height: 108px;
   border-left: 4px solid var(--teal);
@@ -1276,7 +1464,16 @@ li {
   .budget-grid,
   .compare-grid,
   .alternative-grid,
-  .scenario-lane {
+  .scenario-lane,
+  .framework-grid,
+  .maturity-grid,
+  .analytics-grid,
+  .security-grid,
+  .raci-grid,
+  .service-level-grid,
+  .continuity-grid,
+  .stakeholder-grid,
+  .next-step-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1336,6 +1533,15 @@ li {
   .module-map,
   .scenario-lane,
   .problem-grid,
+  .framework-grid,
+  .maturity-grid,
+  .analytics-grid,
+  .security-grid,
+  .raci-grid,
+  .service-level-grid,
+  .continuity-grid,
+  .stakeholder-grid,
+  .next-step-grid,
   .meta-grid {
     grid-template-columns: 1fr;
   }
@@ -1405,7 +1611,15 @@ li {
   .budget-card,
   .compare-block,
   .alternative-card,
-  .problem-card {
+  .problem-card,
+  .framework-grid div,
+  .maturity-card,
+  .analytics-grid div,
+  .security-grid div,
+  .raci-grid div,
+  .service-level-grid div,
+  .continuity-grid div,
+  .stakeholder-grid div {
     min-height: auto;
   }
 
