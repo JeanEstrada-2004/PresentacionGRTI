@@ -3,6 +3,7 @@ const prevButton = document.getElementById("prevSlide");
 const nextButton = document.getElementById("nextSlide");
 const slideCount = document.getElementById("slideCount");
 const progressBar = document.getElementById("progressBar");
+const deck = document.querySelector(".deck");
 
 let currentSlide = 0;
 
@@ -75,3 +76,7 @@ window.addEventListener("hashchange", () => {
 });
 
 showSlide(slideIndexFromHash());
+
+requestAnimationFrame(() => {
+  deck.classList.add("is-ready");
+});
