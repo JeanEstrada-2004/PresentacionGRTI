@@ -399,29 +399,61 @@
       <!-- Diapositiva 9 -->
       <section
         class="slide"
-        data-notes="Resaltar que la calidad del dato debe gobernarse antes de alimentar indicadores, mapas o predicción."
+        data-notes="Explicar que antes de usar los datos en dashboards, mapas o predicción, primero deben ordenarse, validarse y registrarse correctamente."
       >
         <div class="slide-header">
           <span class="kicker">Gobierno del dato y calidad</span>
           <span class="section-number">08</span>
         </div>
+
         <div class="slide-body two-column">
           <div>
             <h2>Reglas para convertir archivos en información confiable</h2>
+
+            <p class="subtitle">
+              Antes de generar indicadores, mapas o predicciones, SafeData debe asegurar que los datos estén ordenados,
+              completos y registrados con trazabilidad.
+            </p>
+
             <div class="control-grid">
-              <div>Catálogos controlados: zonas, turnos, tipos, estados y roles.</div>
-              <div>Trazabilidad de carga: usuario, fecha, archivo, hash y filas rechazadas.</div>
-              <div>Validación de columnas obligatorias antes de registrar incidencias.</div>
-              <div>Linaje del dato desde archivo fuente hasta tablero y reporte.</div>
-              <div>Cambios de reglas con aprobación funcional y versión registrada.</div>
-              <div>Información agregada cuando corresponda coordinar con actores externos.</div>
+              <div>
+                <strong>Catálogos controlados</strong>
+                <span>Usar listas oficiales para zonas, turnos, tipos de incidencia, estados y roles, evitando nombres escritos de formas distintas.</span>
+              </div>
+
+              <div>
+                <strong>Trazabilidad de carga</strong>
+                <span>Registrar quién subió el archivo, cuándo lo hizo, qué archivo cargó y cuántas filas fueron aceptadas o rechazadas.</span>
+              </div>
+
+              <div>
+                <strong>Validación previa</strong>
+                <span>Revisar que el archivo tenga las columnas obligatorias antes de guardar las incidencias en la base de datos.</span>
+              </div>
+
+              <div>
+                <strong>Origen del dato</strong>
+                <span>Conservar la relación entre el archivo cargado, los registros almacenados y los reportes generados.</span>
+              </div>
+
+              <div>
+                <strong>Cambios controlados</strong>
+                <span>Modificar reglas, zonas o tipos de incidencia solo con aprobación del área responsable y dejando registro del cambio.</span>
+              </div>
+
+              <div>
+                <strong>Reportes agregados</strong>
+                <span>Cuando se comparta información con CODISEC u otros actores, mostrar datos resumidos y no información sensible.</span>
+              </div>
             </div>
           </div>
+
           <div class="image-stack">
             <figure class="figure-frame mini">
               <img src="img/modelo-datos.png" alt="Modelo entidad relación de referencia" />
               <figcaption>Modelo de datos de referencia.</figcaption>
             </figure>
+
             <figure class="figure-frame mini browser-frame">
               <img src="img/zonas.jpeg" alt="Catálogo o vista de zonas operativas" />
               <figcaption>Catálogos operativos para normalización del dato.</figcaption>
