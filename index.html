@@ -104,16 +104,23 @@
           <span class="kicker">Objetivo y enfoque de gestión TI</span>
           <span class="section-number">03</span>
         </div>
-        <div class="slide-body">
+        <div class="slide-body management-layout">
           <h2>Diseñar la gestión de recursos TI para implementar SafeData Intelligence</h2>
-          <p class="objective">La propuesta cubre infraestructura, software, datos, personas, seguridad, continuidad, costos, SLA e indicadores de operación.</p>
-          <div class="framework-grid compact-framework">
-            <div><strong>ITIL 4</strong><span>Incidentes, solicitudes, cambios, disponibilidad, continuidad y niveles de servicio.</span></div>
-            <div><strong>COBIT 2019</strong><span>Alineación institucional, entrega de valor, riesgos y optimización de recursos.</span></div>
-            <div><strong>ISO/IEC 27001 + 27002</strong><span>Acceso, seguridad operacional, auditoría, respaldo y continuidad.</span></div>
-            <div><strong>NIST CSF 2.0</strong><span>Gobernar, identificar, proteger, detectar, responder y recuperar.</span></div>
-            <div><strong>Ley N.° 27933</strong><span>Coordinación distrital de seguridad ciudadana mediante información agregada.</span></div>
-            <div><strong>Ley N.° 29733</strong><span>Tratamiento responsable, confidencialidad y protección de datos personales.</span></div>
+          <div class="management-hero">
+            <p class="objective">La propuesta cubre infraestructura, software, datos, personas, seguridad, continuidad, costos, SLA e indicadores de operación.</p>
+            <div class="management-focus">
+              <span class="panel-label">Qué evalúa el curso</span>
+              <strong>Capacidad de convertir una solución funcional en un servicio TI gobernado.</strong>
+              <p>Por eso la exposición prioriza recursos, responsables, controles, presupuesto, riesgos y operación inicial.</p>
+            </div>
+          </div>
+          <div class="framework-grid compact-framework enhanced-framework">
+            <div><strong>ITIL 4</strong><span>Define cómo atender incidentes, solicitudes, cambios, disponibilidad, continuidad y niveles de servicio.</span></div>
+            <div><strong>COBIT 2019</strong><span>Asegura alineación institucional, entrega de valor, control de riesgos y optimización de recursos.</span></div>
+            <div><strong>ISO/IEC 27001 + 27002</strong><span>Ordena controles de acceso, seguridad operacional, auditoría, respaldo y continuidad.</span></div>
+            <div><strong>NIST CSF 2.0</strong><span>Permite gobernar, identificar, proteger, detectar, responder y recuperar ante eventos.</span></div>
+            <div><strong>Ley N.° 27933</strong><span>Justifica reportes agregados para coordinación distrital de seguridad ciudadana.</span></div>
+            <div><strong>Ley N.° 29733</strong><span>Exige tratamiento responsable, confidencialidad y protección de datos personales.</span></div>
           </div>
         </div>
       </section>
@@ -127,15 +134,16 @@
           <span class="kicker">Brechas de recursos TI</span>
           <span class="section-number">04</span>
         </div>
-        <div class="slide-body">
+        <div class="slide-body breach-layout">
           <h2>Brechas que deben convertirse en gestión operativa</h2>
-          <div class="breach-grid">
-            <div><strong>Datos</strong><span>Calidad variable, catálogos no consolidados, linaje incompleto y archivos dispersos.</span></div>
-            <div><strong>Personas</strong><span>Responsables de dato, soporte, aprobación y operación deben formalizarse.</span></div>
-            <div><strong>Infraestructura</strong><span>Se requiere servidor, HTTPS, base de datos, monitoreo, backup y escalamiento.</span></div>
-            <div><strong>Seguridad</strong><span>Roles, auditoría, secretos fuera del código, control de exportaciones y acceso seguro entre sedes.</span></div>
-            <div><strong>Continuidad</strong><span>Backups, restauración, RPO, RTO, retención y pruebas documentadas.</span></div>
-            <div><strong>Medición</strong><span>Disponibilidad, tiempos de atención, uso, calidad del dato y cumplimiento de SLA.</span></div>
+          <p class="subtitle">Cada brecha no se queda como diagnóstico: se traduce en un recurso TI, un control o una responsabilidad operativa.</p>
+          <div class="breach-grid enhanced-breach">
+            <div><strong>Datos</strong><span>Calidad variable, catálogos no consolidados y linaje incompleto.</span><small>Gestión requerida: modelo, validaciones, lotes, errores por fila y gobierno del dato.</small></div>
+            <div><strong>Personas</strong><span>Responsables de dato, soporte, aprobación y operación aún deben formalizarse.</span><small>Gestión requerida: RACI, capacitación, responsable funcional y soporte OTICS.</small></div>
+            <div><strong>Infraestructura</strong><span>Se requiere servidor, HTTPS, base de datos, monitoreo, backup y escalamiento.</span><small>Gestión requerida: cloud, Nginx, PostgreSQL, alertas y capacidad inicial.</small></div>
+            <div><strong>Seguridad</strong><span>Roles, auditoría, secretos fuera del código y acceso seguro entre sedes.</span><small>Gestión requerida: mínimo privilegio, HTTPS/VPN, registros y control de exportaciones.</small></div>
+            <div><strong>Continuidad</strong><span>Backups, restauración, RPO, RTO, retención y pruebas documentadas.</span><small>Gestión requerida: pg_dump, snapshots, copia secundaria y restauración trimestral.</small></div>
+            <div><strong>Medición</strong><span>Disponibilidad, atención, uso, calidad del dato y cumplimiento de SLA.</span><small>Gestión requerida: tablero de servicio, umbrales, reportes y revisión mensual.</small></div>
           </div>
         </div>
       </section>
@@ -149,7 +157,7 @@
           <span class="kicker">Alternativas y decisión tecnológica</span>
           <span class="section-number">05</span>
         </div>
-        <div class="slide-body">
+        <div class="slide-body alternatives-layout">
           <h2>La selección prioriza equilibrio, control y evolución gradual</h2>
           <div class="alternative-grid">
             <article class="alternative-card">
@@ -176,6 +184,11 @@
               <span>Requiere gobierno, seguridad, soporte, mantenimiento y operación formal.</span>
               <small>Equilibrio entre costo, control, alcance y mejora gradual.</small>
             </article>
+          </div>
+          <div class="decision-strip">
+            <div><strong>Criterio clave</strong><span>Evitar una solución manual que no escala y una solución comercial sobredimensionada para la primera fase.</span></div>
+            <div><strong>Decisión de gestión</strong><span>Implementar SafeData con gobierno, seguridad, soporte, continuidad y medición desde el inicio.</span></div>
+            <div><strong>Camino de evolución</strong><span>Escalar licencias, capacidad cloud o módulos GIS/BI solo cuando el uso real lo justifique.</span></div>
           </div>
         </div>
       </section>
@@ -281,17 +294,20 @@
           <span class="kicker">Infraestructura cloud y sedes operativas</span>
           <span class="section-number">09</span>
         </div>
-        <div class="slide-body two-column wide-right">
+        <div class="slide-body two-column wide-right infrastructure-layout">
           <div>
             <h2>Cloud evita depender de una sola oficina física</h2>
-            <ul class="bullet-list dense">
-              <li>Sede principal y punto operativo Simón Bolívar acceden mediante conexión segura y usuarios autorizados.</li>
-              <li>OTICS conserva administración técnica; el proveedor cloud aporta infraestructura disponible y respaldable.</li>
-              <li>HTTPS/VPN protege credenciales, reportes y consultas entre ubicaciones municipales.</li>
-              <li>Firewall cloud, Nginx y reglas IP reducen la superficie expuesta a Internet.</li>
-              <li>Backups remotos, snapshots y copia secundaria opcional cubren caída del servidor o error humano.</li>
-              <li>Monitoreo alerta disponibilidad, CPU, RAM, disco y errores antes de afectar el servicio.</li>
-            </ul>
+            <div class="site-access">
+              <span>Sede principal</span>
+              <strong>Cloud seguro</strong>
+              <span>Simón Bolívar</span>
+            </div>
+            <div class="infra-rationale-grid">
+              <div><strong>Acceso centralizado</strong><span>Ambas sedes consultan el mismo servicio, evitando copias locales desactualizadas.</span></div>
+              <div><strong>Control técnico</strong><span>OTICS administra accesos, reglas, monitoreo y respaldos; el proveedor solo entrega infraestructura.</span></div>
+              <div><strong>Canal seguro</strong><span>HTTPS/VPN protege credenciales, reportes y consultas entre ubicaciones autorizadas.</span></div>
+              <div><strong>Continuidad</strong><span>Backups remotos, snapshots y copia secundaria cubren caída del servidor o error humano.</span></div>
+            </div>
           </div>
           <figure class="figure-frame diagram">
             <img src="img/flujo-infraestructura.png" alt="Flujo general de infraestructura y recursos TI" />
@@ -309,7 +325,7 @@
           <span class="kicker">Arquitectura de despliegue objetivo</span>
           <span class="section-number">10</span>
         </div>
-        <div class="slide-body two-column wide-right compact-spec">
+        <div class="slide-body two-column wide-right compact-spec architecture-layout">
           <div>
             <h2>Arquitectura inicial no sobredimensionada</h2>
             <div class="spec-list">
@@ -319,6 +335,10 @@
               <div><strong>Base de datos</strong><span>PostgreSQL 16 con opción PostGIS: datos relacionales, auditoría y análisis territorial.</span></div>
               <div><strong>Seguridad</strong><span>HTTPS 443, firewall cloud y reglas IP: tráfico cifrado y menor exposición.</span></div>
               <div><strong>Continuidad</strong><span>pg_dump diario, snapshot semanal y alertas: recuperación lógica y del servidor.</span></div>
+            </div>
+            <div class="scale-note">
+              <strong>Criterio de escalamiento</strong>
+              <span>Se amplía CPU, RAM o almacenamiento si aumentan usuarios concurrentes, registros mensuales, consultas geográficas o carga histórica.</span>
             </div>
           </div>
           <figure class="figure-frame diagram">
@@ -440,7 +460,7 @@
           <span class="kicker">Continuidad y recuperación</span>
           <span class="section-number">14</span>
         </div>
-        <div class="slide-body">
+        <div class="slide-body continuity-layout">
           <h2>Backups, recuperación y pruebas desde la primera fase</h2>
           <div class="continuity-grid">
             <div><strong>Frecuencia</strong><span>Backup lógico diario si la carga es frecuente; mínimo semanal en etapa inicial.</span></div>
@@ -449,6 +469,11 @@
             <div><strong>RPO</strong><span>24 horas en etapa inicial; reducible si la operación lo exige.</span></div>
             <div><strong>RTO</strong><span>4 horas hábiles para restauración inicial ante incidente crítico.</span></div>
             <div><strong>Prueba</strong><span>Restauración trimestral con OTICS y validación funcional del analista.</span></div>
+          </div>
+          <div class="continuity-detail-grid">
+            <div><strong>RPO</strong><span>Máxima pérdida tolerable: 24 horas en etapa inicial.</span></div>
+            <div><strong>RTO</strong><span>Tiempo objetivo de recuperación: 4 horas hábiles ante incidente crítico.</span></div>
+            <div><strong>Evidencia</strong><span>Bitácora de backup, resultado de restauración y validación funcional.</span></div>
           </div>
           <p class="statement compact-statement">La continuidad debe probarse, registrarse y revisarse; no basta con programar un respaldo.</p>
         </div>
@@ -481,6 +506,11 @@
             <div><strong>Mantenimiento evolutivo</strong><span>Ajustes funcionales, mejoras y soporte posterior.</span></div>
             <div><strong>Carga histórica inicial</strong><span>Limpieza, normalización y migración de datos previos.</span></div>
           </div>
+          <div class="budget-scenario-grid">
+            <div><strong>Base</strong><span>Recursos mínimos para operación inicial y usuarios internos autorizados.</span></div>
+            <div><strong>Complementario</strong><span>Pruebas, acceso seguro, copia local, seguridad y carga histórica.</span></div>
+            <div><strong>Escalable</strong><span>Crece si aumentan sedes, registros, consultas geográficas o concurrencia.</span></div>
+          </div>
           <p class="tech-rationale budget-note">La estimación distingue costos obligatorios, opcionales y de escalamiento para iniciar con inversión controlada y ampliar según uso real.</p>
         </div>
       </section>
@@ -510,6 +540,10 @@
             <div><strong>Puesta en operación</strong><span>Usuarios creados, datos iniciales cargados, backup probado y SLA comunicado.</span></div>
             <div><strong>Criterio de éxito</strong><span>Servicio accesible, seguro, medible y validado por el área usuaria.</span></div>
           </div>
+          <div class="go-live-strip">
+            <strong>Salida esperada:</strong>
+            <span>un servicio listo para operación inicial, con usuarios habilitados, datos base cargados, controles activos y responsables informados.</span>
+          </div>
         </div>
       </section>
 
@@ -522,7 +556,7 @@
           <span class="kicker">Riesgos, indicadores y conclusiones</span>
           <span class="section-number">17</span>
         </div>
-        <div class="slide-body final-grid">
+        <div class="slide-body final-grid final-layout">
           <div>
             <h2>SafeData como servicio TI medible, seguro y sostenible</h2>
             <div class="risk-list">
