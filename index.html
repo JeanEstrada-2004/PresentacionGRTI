@@ -11,7 +11,7 @@
       <!-- Diapositiva 1 -->
       <section
         class="slide title-slide"
-        data-notes="Presentar que el trabajo no se centra solo en desarrollar un sistema, sino en gestionar los recursos TI necesarios para implementarlo, operarlo y medirlo."
+        data-notes="Presentar que el trabajo se centra en gestionar los recursos TI necesarios para implementar, operar, asegurar y medir SafeData Intelligence."
       >
         <div class="slide-header">
           <span class="kicker">Gestión de Recursos de TI</span>
@@ -22,8 +22,8 @@
             <h1>Gestión de Recursos de TI para la Implementación de SafeData Intelligence</h1>
             <p class="lead">Municipalidad Distrital de José Luis Bustamante y Rivero</p>
             <div class="title-tags" aria-label="Ejes de SafeData Intelligence">
-              <span><strong>IA</strong> Riesgo predictivo</span>
-              <span><strong>GIS</strong> Mapa de calor</span>
+              <span><strong>Cloud</strong> Acceso seguro</span>
+              <span><strong>Datos</strong> Trazabilidad</span>
               <span><strong>SLA</strong> Servicio TI</span>
             </div>
             <div class="meta-grid">
@@ -35,7 +35,7 @@
           </div>
           <aside class="focus-panel">
             <span class="panel-label">Enfoque de exposición</span>
-            <p>Implementar, operar, asegurar y medir una solución institucional para gestión preventiva municipal.</p>
+            <p>Pasar de un prototipo funcional a un servicio TI municipal operable, seguro, medible y sostenible.</p>
           </aside>
         </div>
       </section>
@@ -43,26 +43,27 @@
       <!-- Diapositiva 2 -->
       <section
         class="slide"
-        data-notes="Explicar quién necesita la solución, quién la usa, quién la sostiene técnicamente y qué actores reciben información agregada para coordinación."
+        data-notes="Ubicar el proyecto en la municipalidad, aclarar que puede operar desde sede principal y punto operativo en Simón Bolívar, y separar la función municipal de la policial."
       >
         <div class="slide-header">
-          <span class="kicker">Contexto institucional</span>
+          <span class="kicker">Alcance institucional y sedes</span>
           <span class="section-number">01</span>
         </div>
         <div class="slide-body two-column">
           <div>
-            <h2>La municipalidad como entidad principal</h2>
-            <p class="subtitle">SafeData Intelligence responde a una necesidad institucional de Seguridad Ciudadana.</p>
+            <h2>Servicio municipal accesible desde sedes autorizadas</h2>
+            <p class="subtitle">La operación puede realizarse desde la sede municipal principal y desde un punto operativo de Seguridad Ciudadana en Simón Bolívar.</p>
             <div class="role-grid">
-              <div class="role-card accent-teal" data-icon="M"><strong>Gerencia Municipal / Alcaldía</strong><span>Aprobación, priorización y patrocinio administrativo.</span></div>
-              <div class="role-card accent-berry" data-icon="G"><strong>Gerencia de Seguridad Ciudadana</strong><span>Área usuaria, propietaria funcional y responsable del valor operativo.</span></div>
-              <div class="role-card accent-amber" data-icon="T"><strong>OTICS</strong><span>Infraestructura, seguridad, soporte, monitoreo, respaldo y continuidad.</span></div>
-              <div class="role-card accent-green" data-icon="C"><strong>CODISEC / PNP</strong><span>Coordinación con reportes agregados y contexto operativo preventivo.</span></div>
+              <div class="role-card accent-teal" data-icon="SM"><strong>Sede principal</strong><span>Gestión institucional, aprobación funcional y coordinación con áreas municipales.</span></div>
+              <div class="role-card accent-amber" data-icon="SB"><strong>Simón Bolívar</strong><span>Punto operativo posible para consulta, carga o coordinación autorizada de Seguridad Ciudadana.</span></div>
+              <div class="role-card accent-berry" data-icon="GS"><strong>Gerencia de Seguridad Ciudadana</strong><span>Área usuaria y propietaria funcional del servicio.</span></div>
+              <div class="role-card accent-green" data-icon="TI"><strong>OTICS</strong><span>Administración técnica, accesos, monitoreo, respaldos y continuidad.</span></div>
             </div>
+            <p class="tech-rationale">SafeData no reemplaza denuncias formales ni funciones de la PNP; organiza información municipal preventiva y reportes agregados para coordinación.</p>
           </div>
-          <figure class="figure-frame">
+          <figure class="figure-frame compact">
             <img src="img/organigrama.png" alt="Organigrama estructural de la municipalidad" />
-            <figcaption>Organigrama estructural de la Municipalidad Distrital de José Luis Bustamante y Rivero.</figcaption>
+            <figcaption>La solución se ubica dentro de la gestión municipal y requiere soporte técnico institucional.</figcaption>
           </figure>
         </div>
       </section>
@@ -70,65 +71,48 @@
       <!-- Diapositiva 3 -->
       <section
         class="slide"
-        data-notes="Aclarar que SafeData trabaja con información municipal y reportes operativos; no registra denuncias formales ni reemplaza competencias policiales."
+        data-notes="Resumir el problema sin extenderse en la empresa: el reto es convertir reportes operativos en información confiable y gestionada."
       >
         <div class="slide-header">
-          <span class="kicker">Delimitación del alcance</span>
+          <span class="kicker">Problema y necesidad</span>
           <span class="section-number">02</span>
         </div>
-        <div class="slide-body">
-          <h2>Seguridad preventiva municipal, no sistema policial</h2>
-          <p class="subtitle">La propuesta separa la función municipal de serenazgo y la función policial formal.</p>
-          <div class="compare-grid">
-            <div class="compare-block">
-              <span class="block-label">Seguridad Ciudadana / Serenazgo</span>
-              <ul>
-                <li>Prevención y patrullaje disuasivo.</li>
-                <li>Incidencias municipales y apoyo inicial.</li>
-                <li>Control de espacios públicos y coordinación vecinal.</li>
-                <li>Indicadores preventivos por zona, turno y tipo.</li>
-              </ul>
-            </div>
-            <div class="compare-block">
-              <span class="block-label">PNP / comisarías</span>
-              <ul>
-                <li>Denuncias formales.</li>
-                <li>Investigación e intervención policial.</li>
-                <li>Actuación ante delitos.</li>
-                <li>Registro oficial y procedimientos policiales.</li>
-              </ul>
-            </div>
-            <div class="compare-block emphasis">
-              <span class="block-label">SafeData Intelligence</span>
-              <ul>
-                <li>Apoyo preventivo municipal.</li>
-                <li>Incidencias, alertas, zonas, turnos y tipos.</li>
-                <li>Dashboard, mapa de calor y predicción inicial.</li>
-                <li>Reportes agregados para CODISEC y coordinación con PNP.</li>
-              </ul>
+        <div class="slide-body two-column wide-left">
+          <div>
+            <h2>El reto principal es de gestión de información y recursos TI</h2>
+            <p class="subtitle">Los reportes existen, pero el ciclo todavía depende de consolidación manual, criterios no uniformes y baja trazabilidad.</p>
+            <div class="problem-grid compact-grid">
+              <div class="problem-card" data-icon="01"><strong>Datos dispersos</strong><span>Excel/CSV y formatos operativos sin repositorio analítico formal.</span></div>
+              <div class="problem-card" data-icon="02"><strong>Validación manual</strong><span>Errores, valores heterogéneos y baja estandarización.</span></div>
+              <div class="problem-card" data-icon="03"><strong>Baja trazabilidad</strong><span>No siempre se identifica origen, usuario, lote o corrección aplicada.</span></div>
+              <div class="problem-card" data-icon="04"><strong>Sin SLA operativo</strong><span>Faltan niveles de atención, monitoreo, backup y medición recurrente.</span></div>
             </div>
           </div>
+          <figure class="figure-frame compact">
+            <img src="img/informe-operativo.jpg" alt="Formato de informe operativo de referencia" />
+            <figcaption>Los reportes operativos son la fuente que debe convertirse en información trazable.</figcaption>
+          </figure>
         </div>
       </section>
 
       <!-- Diapositiva 4 -->
       <section
         class="slide"
-        data-notes="Explicar que la propuesta no se sostiene solo por tecnología, sino por prácticas de gobierno, servicios, seguridad y cumplimiento aplicadas al caso municipal."
+        data-notes="Conectar el objetivo con el curso y mostrar los marcos usados para gestionar recursos, riesgos, seguridad y servicio."
       >
         <div class="slide-header">
-          <span class="kicker">Marco de gestión y cumplimiento</span>
+          <span class="kicker">Objetivo y enfoque de gestión TI</span>
           <span class="section-number">03</span>
         </div>
         <div class="slide-body">
-          <h2>La implementación se gobierna como servicio TI municipal</h2>
-          <p class="subtitle">El marco usado conecta Gestión de Recursos de TI con operación, control, seguridad y coordinación pública.</p>
-          <div class="framework-grid">
+          <h2>Diseñar la gestión de recursos TI para implementar SafeData Intelligence</h2>
+          <p class="objective">La propuesta cubre infraestructura, software, datos, personas, seguridad, continuidad, costos, SLA e indicadores de operación.</p>
+          <div class="framework-grid compact-framework">
             <div><strong>ITIL 4</strong><span>Incidentes, solicitudes, cambios, disponibilidad, continuidad y niveles de servicio.</span></div>
             <div><strong>COBIT 2019</strong><span>Alineación institucional, entrega de valor, riesgos y optimización de recursos.</span></div>
             <div><strong>ISO/IEC 27001 + 27002</strong><span>Acceso, seguridad operacional, auditoría, respaldo y continuidad.</span></div>
             <div><strong>NIST CSF 2.0</strong><span>Gobernar, identificar, proteger, detectar, responder y recuperar.</span></div>
-            <div><strong>Ley N.° 27933</strong><span>Seguridad ciudadana y coordinación distrital con reportes agregados.</span></div>
+            <div><strong>Ley N.° 27933</strong><span>Coordinación distrital de seguridad ciudadana mediante información agregada.</span></div>
             <div><strong>Ley N.° 29733</strong><span>Tratamiento responsable, confidencialidad y protección de datos personales.</span></div>
           </div>
         </div>
@@ -137,55 +121,61 @@
       <!-- Diapositiva 5 -->
       <section
         class="slide"
-        data-notes="Mostrar que el problema no es solamente tecnológico; también es de datos, responsabilidades, trazabilidad, respaldo y medición del servicio."
+        data-notes="Mostrar que cada brecha se convierte en un recurso, control o proceso que debe gestionarse para operar la solución."
       >
         <div class="slide-header">
-          <span class="kicker">Problema identificado</span>
+          <span class="kicker">Brechas de recursos TI</span>
           <span class="section-number">04</span>
         </div>
-        <div class="slide-body two-column wide-left">
-          <div>
-            <h2>Información operativa dispersa y poco trazable</h2>
-            <p class="subtitle">Los reportes existen, pero el ciclo de información todavía depende de consolidación manual.</p>
-            <div class="problem-grid">
-              <div class="problem-card" data-icon="01"><strong>Datos dispersos</strong><span>Excel/CSV y formatos operativos sin repositorio analítico formal.</span></div>
-              <div class="problem-card" data-icon="02"><strong>Validación manual</strong><span>Valores heterogéneos, errores y bajo control de versiones.</span></div>
-              <div class="problem-card" data-icon="03"><strong>Baja trazabilidad</strong><span>No siempre queda claro origen, usuario, lote, error o cambio aplicado.</span></div>
-              <div class="problem-card" data-icon="04"><strong>Sin SLA operativo</strong><span>Falta monitoreo, backup formal, niveles de atención e indicadores recurrentes.</span></div>
-              <div class="problem-card" data-icon="05"><strong>Análisis limitado</strong><span>Dificultad para evaluar zonas, turnos, tipos de incidencia y tendencias.</span></div>
-            </div>
+        <div class="slide-body">
+          <h2>Brechas que deben convertirse en gestión operativa</h2>
+          <div class="breach-grid">
+            <div><strong>Datos</strong><span>Calidad variable, catálogos no consolidados, linaje incompleto y archivos dispersos.</span></div>
+            <div><strong>Personas</strong><span>Responsables de dato, soporte, aprobación y operación deben formalizarse.</span></div>
+            <div><strong>Infraestructura</strong><span>Se requiere servidor, HTTPS, base de datos, monitoreo, backup y escalamiento.</span></div>
+            <div><strong>Seguridad</strong><span>Roles, auditoría, secretos fuera del código, control de exportaciones y acceso seguro entre sedes.</span></div>
+            <div><strong>Continuidad</strong><span>Backups, restauración, RPO, RTO, retención y pruebas documentadas.</span></div>
+            <div><strong>Medición</strong><span>Disponibilidad, tiempos de atención, uso, calidad del dato y cumplimiento de SLA.</span></div>
           </div>
-          <figure class="figure-frame compact">
-            <img src="img/informe-operativo.jpg" alt="Formato de informe operativo de referencia" />
-            <figcaption>Formato operativo usado como referencia para estructurar incidencias municipales.</figcaption>
-          </figure>
         </div>
       </section>
 
       <!-- Diapositiva 6 -->
       <section
         class="slide"
-        data-notes="Explicar por qué la municipalidad necesita una solución gestionada: convertir reportes en información útil, elevar trazabilidad y apoyar coordinación preventiva."
+        data-notes="Explicar que la alternativa elegida busca equilibrio entre costo, control del dato, adaptación municipal y sostenibilidad técnica."
       >
         <div class="slide-header">
-          <span class="kicker">Necesidad institucional</span>
+          <span class="kicker">Alternativas y decisión tecnológica</span>
           <span class="section-number">05</span>
         </div>
         <div class="slide-body">
-          <h2>De archivos operativos a información para decisión</h2>
-          <p class="statement">Convertir reportes operativos en información útil para decisiones preventivas.</p>
-          <p class="subtitle">El valor está en planificar mejor la prevención y sostener el servicio con recursos TI gestionados.</p>
-          <div class="metric-row">
-            <div class="metric"><strong>84,251</strong><span>habitantes proyectados</span></div>
-            <div class="metric"><strong>2,829</strong><span>hurtos acumulados usados como contexto PADSC</span></div>
-            <div class="metric"><strong>910</strong><span>robos acumulados usados como contexto PADSC</span></div>
-            <div class="metric"><strong>S/ 66.6 M</strong><span>PIA municipal 2025 referencial</span></div>
-          </div>
-          <div class="need-grid">
-            <div>Identificar zonas críticas y turnos de mayor concentración.</div>
-            <div>Reducir trabajo manual en preparación de reportes.</div>
-            <div>Mejorar calidad, trazabilidad y linaje del dato.</div>
-            <div>Coordinar con CODISEC y PNP mediante información agregada.</div>
+          <h2>La selección prioriza equilibrio, control y evolución gradual</h2>
+          <div class="alternative-grid">
+            <article class="alternative-card">
+              <span class="alternative-label">Alternativa 1</span>
+              <h3>Excel y reportes manuales</h3>
+              <p>Bajo costo inmediato y uso conocido.</p>
+              <strong>Limitación</strong>
+              <span>Alta carga manual, errores, baja trazabilidad y dependencia de personas.</span>
+              <small>Sirve como respaldo temporal, no como servicio TI.</small>
+            </article>
+            <article class="alternative-card">
+              <span class="alternative-label">Alternativa 2</span>
+              <h3>GIS/BI comercial</h3>
+              <p>Herramientas maduras y soporte especializado.</p>
+              <strong>Limitación</strong>
+              <span>Mayor costo, licencias, dependencia de proveedor y posible sobredimensionamiento.</span>
+              <small>Viable a futuro si crecen presupuesto y escala.</small>
+            </article>
+            <article class="alternative-card selected">
+              <span class="badge">Opción seleccionada</span>
+              <h3>SafeData Intelligence</h3>
+              <p>Adaptación al proceso municipal y control del dato.</p>
+              <strong>Condición</strong>
+              <span>Requiere gobierno, seguridad, soporte, mantenimiento y operación formal.</span>
+              <small>Equilibrio entre costo, control, alcance y mejora gradual.</small>
+            </article>
           </div>
         </div>
       </section>
@@ -193,279 +183,69 @@
       <!-- Diapositiva 7 -->
       <section
         class="slide"
-        data-notes="Conectar el objetivo con el curso: la propuesta gestiona infraestructura, software, datos, personas, seguridad, continuidad, presupuesto, SLA e indicadores."
-      >
-        <div class="slide-header">
-          <span class="kicker">Objetivo de la propuesta</span>
-          <span class="section-number">06</span>
-        </div>
-        <div class="slide-body">
-          <h2>Diseñar la gestión de recursos TI para implementar SafeData Intelligence</h2>
-          <p class="objective">
-            Considerando infraestructura, software, datos, roles, seguridad, continuidad, monitoreo, presupuesto e indicadores para apoyar la gestión preventiva municipal.
-          </p>
-          <div class="objective-grid">
-            <div>Diagnosticar situación actual y recursos disponibles.</div>
-            <div>Identificar brechas de datos, infraestructura y operación.</div>
-            <div>Proponer arquitectura tecnológica y recursos TI.</div>
-            <div>Definir operación basada en servicios, SLA y soporte.</div>
-            <div>Estimar costos, capacidad inicial y escalamiento.</div>
-            <div>Plantear indicadores, riesgos y controles de continuidad.</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 8 -->
-      <section
-        class="slide"
-        data-notes="Explicar que cada brecha se convierte en un recurso, control o proceso que debe gestionarse durante la implementación."
-      >
-        <div class="slide-header">
-          <span class="kicker">Diagnóstico de recursos y brechas</span>
-          <span class="section-number">07</span>
-        </div>
-        <div class="slide-body">
-          <h2>Brechas que deben convertirse en gestión operativa</h2>
-          <div class="breach-grid">
-            <div><strong>Datos</strong><span>Dispersión, calidad variable, catálogos no consolidados y falta de linaje.</span></div>
-            <div><strong>Personas</strong><span>Responsabilidades de dato, soporte y aprobación aún no formalizadas.</span></div>
-            <div><strong>Infraestructura</strong><span>Falta capa analítica formal, servidor, HTTPS, monitoreo y respaldo específico.</span></div>
-            <div><strong>Seguridad</strong><span>Riesgo de acceso no diferenciado, exportaciones no controladas y exposición por archivos.</span></div>
-            <div><strong>Continuidad</strong><span>Backups, restauración, RPO, RTO y pruebas deben documentarse.</span></div>
-            <div><strong>Medición</strong><span>Indicadores, SLA, disponibilidad y uso del servicio deben medirse periódicamente.</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 9 -->
-      <section
-        class="slide"
-        data-notes="Mostrar que SafeData fue seleccionado por análisis comparativo: equilibrio entre costo, control del dato, adaptación municipal y evolución gradual."
-      >
-        <div class="slide-header">
-          <span class="kicker">Alternativas evaluadas</span>
-          <span class="section-number">08</span>
-        </div>
-        <div class="slide-body">
-          <h2>Selección por equilibrio, no por preferencia arbitraria</h2>
-          <div class="alternative-grid">
-            <article class="alternative-card">
-              <span class="alternative-label">Alternativa 1</span>
-              <h3>Excel y reportes manuales</h3>
-              <p>Bajo costo inmediato y uso conocido.</p>
-              <strong>Limitación</strong>
-              <span>Alta carga manual, errores, poca trazabilidad y baja disponibilidad de indicadores.</span>
-              <small>Evaluación: respaldo temporal, no solución final.</small>
-            </article>
-            <article class="alternative-card">
-              <span class="alternative-label">Alternativa 2</span>
-              <h3>GIS/BI comercial</h3>
-              <p>Herramientas maduras y soporte especializado.</p>
-              <strong>Limitación</strong>
-              <span>Mayor costo, licencias, dependencia de proveedor y posible sobredimensionamiento inicial.</span>
-              <small>Evaluación: viable a futuro si crece el presupuesto y la escala.</small>
-            </article>
-            <article class="alternative-card selected">
-              <span class="badge">Opción seleccionada</span>
-              <h3>SafeData Intelligence</h3>
-              <p>Adaptación al proceso municipal y control del dato.</p>
-              <strong>Condición</strong>
-              <span>Requiere gobierno, seguridad, soporte, mantenimiento y consolidación técnica.</span>
-              <small>Equilibrio entre costo, control, alcance y evolución gradual.</small>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 10 -->
-      <section
-        class="slide"
-        data-notes="Diferenciar con claridad el prototipo funcional de una versión institucional lista para producción municipal."
-      >
-        <div class="slide-header">
-          <span class="kicker">Prototipo vs solución institucional</span>
-          <span class="section-number">09</span>
-        </div>
-        <div class="slide-body two-column">
-          <div>
-            <h2>El prototipo demuestra viabilidad; producción exige gestión TI</h2>
-            <p class="subtitle">La solución objetivo debe consolidar seguridad, trazabilidad, despliegue, monitoreo y operación formal.</p>
-            <div class="maturity-grid">
-              <div class="maturity-card ready"><strong>Base funcional existente</strong><span>Carga Excel/CSV, dashboard, mapa de calor, predicción híbrida y administración de usuarios.</span></div>
-              <div class="maturity-card action"><strong>Consolidación requerida</strong><span>Registro de lotes, errores por fila, auditoría completa y protección de APIs.</span></div>
-              <div class="maturity-card action"><strong>Producción municipal</strong><span>HTTPS, Nginx, variables de entorno, backups, monitoreo y pruebas de restauración.</span></div>
-              <div class="maturity-card guard"><strong>Criterio de gestión</strong><span>No basta con que el sistema funcione; debe ser operable, medible, seguro y sostenible.</span></div>
-            </div>
-          </div>
-          <div class="image-stack">
-            <figure class="figure-frame mini browser-frame">
-              <img src="img/login.png" alt="Acceso por roles a SafeData Intelligence" />
-              <figcaption>Acceso por roles como punto de partida del control institucional.</figcaption>
-            </figure>
-            <figure class="figure-frame mini browser-frame">
-              <img src="img/carga-archivos.jpeg" alt="Módulo de carga de archivos Excel y CSV" />
-              <figcaption>Carga de archivos como proceso crítico de ingreso de datos.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 11 -->
-      <section
-        class="slide"
-        data-notes="Presentar qué hace el sistema y cómo transforma reportes de serenazgo en información accionable para la gestión preventiva."
+        data-notes="Presentar la solución de forma breve, enfocándose en módulos y recursos que deben gestionarse."
       >
         <div class="slide-header">
           <span class="kicker">Solución propuesta</span>
-          <span class="section-number">10</span>
+          <span class="section-number">06</span>
         </div>
         <div class="slide-body two-column wide-left">
           <div>
             <h2>SafeData Intelligence como plataforma web interna</h2>
-            <p class="subtitle">Solución innovadora, viable y alineada a una necesidad institucional.</p>
+            <p class="subtitle">La solución convierte reportes municipales en indicadores, mapas, predicción inicial y reportes agregados.</p>
             <div class="module-map">
               <div>Carga Excel/CSV</div>
               <div>Validación</div>
-              <div>Repositorio PostgreSQL</div>
+              <div>PostgreSQL</div>
               <div>Dashboard</div>
               <div>Mapa de calor</div>
               <div>Predicción inicial</div>
               <div>Roles</div>
               <div>Auditoría</div>
             </div>
+            <p class="tech-rationale">El prototipo demuestra viabilidad; producción exige HTTPS, roles, auditoría, backups, monitoreo, pruebas y soporte.</p>
           </div>
           <figure class="figure-frame browser-frame">
             <img src="img/dashboard.jpeg" alt="Dashboard de indicadores de SafeData Intelligence" />
-            <figcaption>Dashboard de indicadores de SafeData Intelligence.</figcaption>
+            <figcaption>Dashboard como evidencia funcional y punto de consumo de información.</figcaption>
           </figure>
         </div>
       </section>
 
-      <!-- Diapositiva 12 -->
+      <!-- Diapositiva 8 -->
       <section
         class="slide"
-        data-notes="Explicar cómo la información pasa de archivo operativo a base trazable, indicadores, mapa, predicción y reportes para decisiones preventivas."
+        data-notes="Explicar el flujo del dato desde reportes operativos hasta análisis preventivo y tableros para decisión."
       >
         <div class="slide-header">
-          <span class="kicker">Flujo funcional de datos</span>
-          <span class="section-number">11</span>
+          <span class="kicker">Flujo funcional y explotación de información</span>
+          <span class="section-number">07</span>
         </div>
-        <div class="slide-body visual-slide">
+        <div class="slide-body two-column wide-right">
           <div>
-            <h2>Del reporte operativo al tablero de decisión</h2>
-            <div class="flow-strip">
-              <span>Excel/CSV</span>
-              <span>Carga segura</span>
-              <span>Validación</span>
-              <span>PostgreSQL</span>
-              <span>Auditoría</span>
-              <span>Dashboard y mapa</span>
+            <h2>Del archivo operativo al tablero de decisión</h2>
+            <div class="analytics-grid">
+              <div><strong>Carga y validación</strong><span>Archivo fuente, columnas obligatorias, catálogos y errores por fila.</span></div>
+              <div><strong>Repositorio único</strong><span>Incidencias, zonas, turnos, tipos, usuarios, lotes y auditoría.</span></div>
+              <div><strong>Analítica operativa</strong><span>Dashboard, mapa de calor, tendencias, zonas críticas y turnos.</span></div>
+              <div><strong>Coordinación</strong><span>Reportes agregados para Gerencia, OTICS, CODISEC y coordinación externa.</span></div>
             </div>
           </div>
           <figure class="figure-frame diagram">
             <img src="img/flujo-funcional.png" alt="Flujo funcional de datos de SafeData Intelligence" />
-            <figcaption>Flujo funcional de datos de SafeData Intelligence.</figcaption>
+            <figcaption>Flujo funcional desde archivo operativo hasta información para gestión preventiva.</figcaption>
           </figure>
         </div>
       </section>
 
-      <!-- Diapositiva 13 -->
+      <!-- Diapositiva 9 -->
       <section
         class="slide"
-        data-notes="Explicar que la explotación de información no reemplaza el criterio operativo; organiza indicadores, mapas y predicción inicial para priorizar decisiones preventivas."
+        data-notes="Resaltar que la calidad del dato debe gobernarse antes de alimentar indicadores, mapas o predicción."
       >
         <div class="slide-header">
-          <span class="kicker">Explotación de información</span>
-          <span class="section-number">12</span>
-        </div>
-        <div class="slide-body two-column wide-left">
-          <div>
-            <h2>Indicadores, territorio y predicción como apoyo preventivo</h2>
-            <p class="subtitle">SafeData convierte registros municipales en información consultable para planeamiento, operaciones y coordinación.</p>
-            <div class="analytics-grid">
-              <div><strong>Dashboard operativo</strong><span>Totales por periodo, distribución por zona, turnos, tipos frecuentes y calidad del dato.</span></div>
-              <div><strong>Mapa de calor</strong><span>Concentración territorial para priorizar presencia preventiva y revisar zonas críticas.</span></div>
-              <div><strong>Predicción inicial</strong><span>Riesgo por zona y turno como insumo de planificación, no como decisión automática.</span></div>
-              <div><strong>Reportes agregados</strong><span>Información resumida para gerencia, CODISEC y coordinación con PNP sin exponer datos sensibles.</span></div>
-            </div>
-          </div>
-          <div class="image-stack">
-            <figure class="figure-frame mini browser-frame">
-              <img src="img/mapa-calor.jpeg" alt="Mapa de incidencias y zonas operativas" />
-              <figcaption>Mapa de incidencias y zonas operativas.</figcaption>
-            </figure>
-            <figure class="figure-frame mini browser-frame">
-              <img src="img/prediccion.jpeg" alt="Módulo objetivo de predicción por zona y turno" />
-              <figcaption>Predicción inicial por zona y turno.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 14 -->
-      <section
-        class="slide"
-        data-notes="Explicar que la propuesta considera PCs, red, seguridad perimetral, servidor cloud, base de datos, respaldos, monitoreo y soporte técnico."
-      >
-        <div class="slide-header">
-          <span class="kicker">Infraestructura y recursos TI</span>
-          <span class="section-number">13</span>
-        </div>
-        <div class="slide-body two-column wide-right">
-          <div>
-            <h2>Flujo general de operación técnica</h2>
-            <ul class="bullet-list dense">
-              <li>PC operador, PC analista y acceso de gerencia.</li>
-              <li>Red municipal o Internet seguro mediante HTTPS/VPN para proteger credenciales y consultas desde sedes autorizadas.</li>
-              <li>Firewall cloud, VM Ubuntu LTS, Nginx y FastAPI para separar exposición web, aplicación y reglas de acceso.</li>
-              <li>PostgreSQL/PostGIS para incidencias, catálogos, auditoría y futuras consultas geográficas.</li>
-              <li>Backups remotos, snapshots y copia secundaria opcional para cubrir error humano y caída del servidor.</li>
-              <li>Monitoreo con UptimeRobot y Netdata administrado por OTICS para alertar disponibilidad, CPU, RAM y disco antes de afectar el servicio.</li>
-            </ul>
-          </div>
-          <figure class="figure-frame diagram">
-            <img src="img/flujo-infraestructura.png" alt="Flujo general de infraestructura y recursos TI" />
-            <figcaption>Flujo general de infraestructura y recursos TI.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!-- Diapositiva 15 -->
-      <section
-        class="slide"
-        data-notes="Explicar que se propone una arquitectura inicial suficiente, con costos controlados y posibilidad de escalar si aumenta el uso."
-      >
-        <div class="slide-header">
-          <span class="kicker">Arquitectura de despliegue objetivo</span>
-          <span class="section-number">14</span>
-        </div>
-        <div class="slide-body two-column wide-right compact-spec">
-          <div>
-            <h2>Arquitectura inicial no sobredimensionada</h2>
-            <div class="spec-list">
-              <div><strong>VM cloud</strong><span>2 vCPU, 4 GB RAM y 80 GB SSD: cubre piloto institucional, carga moderada y 5 a 15 usuarios sin pagar capacidad ociosa.</span></div>
-              <div><strong>Sistema</strong><span>Ubuntu Server 24.04 LTS: estable, sin licencia adicional y con soporte extendido para operación municipal.</span></div>
-              <div><strong>Aplicación</strong><span>FastAPI + Jinja2 detrás de Nginx: permite APIs, validación de archivos y proxy HTTPS en una arquitectura simple.</span></div>
-              <div><strong>Base de datos</strong><span>PostgreSQL 16 con opción PostGIS: adecuado para datos relacionales, auditoría y análisis territorial.</span></div>
-              <div><strong>Seguridad</strong><span>HTTPS 443, firewall cloud y reglas IP: cifran el tráfico y reducen la superficie expuesta a Internet.</span></div>
-              <div><strong>Continuidad</strong><span>pg_dump diario, snapshot semanal y alertas: combina recuperación lógica y recuperación del servidor completo.</span></div>
-            </div>
-          </div>
-          <figure class="figure-frame diagram">
-            <img src="img/arquitectura-despliegue.png" alt="Arquitectura de despliegue objetivo" />
-            <figcaption>Arquitectura de despliegue objetivo.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!-- Diapositiva 16 -->
-      <section
-        class="slide"
-        data-notes="Explicar que el dato se gobierna desde la carga: catálogos, validación, trazabilidad, linaje y reglas de cambio antes de alimentar indicadores."
-      >
-        <div class="slide-header">
-          <span class="kicker">Gobierno del dato</span>
-          <span class="section-number">15</span>
+          <span class="kicker">Gobierno del dato y calidad</span>
+          <span class="section-number">08</span>
         </div>
         <div class="slide-body two-column">
           <div>
@@ -476,7 +256,7 @@
               <div>Validación de columnas obligatorias antes de registrar incidencias.</div>
               <div>Linaje del dato desde archivo fuente hasta tablero y reporte.</div>
               <div>Cambios de reglas con aprobación funcional y versión registrada.</div>
-              <div>Información agregada para coordinación externa cuando corresponda.</div>
+              <div>Información agregada cuando corresponda coordinar con actores externos.</div>
             </div>
           </div>
           <div class="image-stack">
@@ -492,14 +272,70 @@
         </div>
       </section>
 
-      <!-- Diapositiva 17 -->
+      <!-- Diapositiva 10 -->
       <section
         class="slide"
-        data-notes="Resaltar que la información de seguridad ciudadana puede ser sensible y que la solución debe aplicar mínimo privilegio, auditoría y controles de cumplimiento."
+        data-notes="Justificar la infraestructura cloud por la operación desde sede principal y punto operativo en Simón Bolívar, sin depender de un servidor físico único."
+      >
+        <div class="slide-header">
+          <span class="kicker">Infraestructura cloud y sedes operativas</span>
+          <span class="section-number">09</span>
+        </div>
+        <div class="slide-body two-column wide-right">
+          <div>
+            <h2>Cloud evita depender de una sola oficina física</h2>
+            <ul class="bullet-list dense">
+              <li>Sede principal y punto operativo Simón Bolívar acceden mediante conexión segura y usuarios autorizados.</li>
+              <li>OTICS conserva administración técnica; el proveedor cloud aporta infraestructura disponible y respaldable.</li>
+              <li>HTTPS/VPN protege credenciales, reportes y consultas entre ubicaciones municipales.</li>
+              <li>Firewall cloud, Nginx y reglas IP reducen la superficie expuesta a Internet.</li>
+              <li>Backups remotos, snapshots y copia secundaria opcional cubren caída del servidor o error humano.</li>
+              <li>Monitoreo alerta disponibilidad, CPU, RAM, disco y errores antes de afectar el servicio.</li>
+            </ul>
+          </div>
+          <figure class="figure-frame diagram">
+            <img src="img/flujo-infraestructura.png" alt="Flujo general de infraestructura y recursos TI" />
+            <figcaption>Flujo general de infraestructura con acceso seguro y soporte de OTICS.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Diapositiva 11 -->
+      <section
+        class="slide"
+        data-notes="Explicar que la arquitectura inicial es suficiente para una primera operación y puede escalar si aumentan usuarios, registros o procesamiento geoespacial."
+      >
+        <div class="slide-header">
+          <span class="kicker">Arquitectura de despliegue objetivo</span>
+          <span class="section-number">10</span>
+        </div>
+        <div class="slide-body two-column wide-right compact-spec">
+          <div>
+            <h2>Arquitectura inicial no sobredimensionada</h2>
+            <div class="spec-list">
+              <div><strong>VM cloud</strong><span>2 vCPU, 4 GB RAM y 80 GB SSD: cubre piloto institucional, carga moderada y 5 a 15 usuarios sin pagar capacidad ociosa.</span></div>
+              <div><strong>Sistema</strong><span>Ubuntu Server 24.04 LTS: estable, sin licencia adicional y con soporte extendido.</span></div>
+              <div><strong>Aplicación</strong><span>FastAPI + Jinja2 detrás de Nginx: APIs, validación de archivos y proxy HTTPS.</span></div>
+              <div><strong>Base de datos</strong><span>PostgreSQL 16 con opción PostGIS: datos relacionales, auditoría y análisis territorial.</span></div>
+              <div><strong>Seguridad</strong><span>HTTPS 443, firewall cloud y reglas IP: tráfico cifrado y menor exposición.</span></div>
+              <div><strong>Continuidad</strong><span>pg_dump diario, snapshot semanal y alertas: recuperación lógica y del servidor.</span></div>
+            </div>
+          </div>
+          <figure class="figure-frame diagram">
+            <img src="img/arquitectura-despliegue.png" alt="Arquitectura de despliegue objetivo" />
+            <figcaption>Arquitectura de despliegue objetivo.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Diapositiva 12 -->
+      <section
+        class="slide"
+        data-notes="Mostrar los controles de seguridad mínimos para una solución con información municipal sensible."
       >
         <div class="slide-header">
           <span class="kicker">Seguridad y cumplimiento</span>
-          <span class="section-number">16</span>
+          <span class="section-number">11</span>
         </div>
         <div class="slide-body two-column">
           <div>
@@ -507,9 +343,9 @@
             <p class="subtitle">La seguridad debe cubrir usuarios, APIs, exportaciones, auditoría y tratamiento responsable de datos personales.</p>
             <div class="security-grid">
               <div><strong>Mínimo privilegio</strong><span>Roles diferenciados para gerencia, planeamiento, operaciones, analista y OTICS.</span></div>
-              <div><strong>Auditoría</strong><span>Registro de login, carga, exportación, cambios de rol y modificaciones de catálogos.</span></div>
+              <div><strong>Auditoría</strong><span>Registro de login, carga, exportación, cambios de rol y catálogos.</span></div>
               <div><strong>Protección de datos</strong><span>Ley N.° 29733, confidencialidad, anonimización y reportes agregados.</span></div>
-              <div><strong>Endurecimiento técnico</strong><span>HTTPS, secretos fuera del código, APIs protegidas, CSRF o control equivalente y modo debug desactivado.</span></div>
+              <div><strong>Endurecimiento técnico</strong><span>HTTPS, secretos fuera del código, APIs protegidas y modo debug desactivado.</span></div>
             </div>
           </div>
           <figure class="figure-frame browser-frame">
@@ -519,49 +355,19 @@
         </div>
       </section>
 
-      <!-- Diapositiva 18 -->
+      <!-- Diapositiva 13 -->
       <section
         class="slide"
-        data-notes="Mostrar que SafeData se plantea como servicio TI operado y medido, no como software aislado; ITIL y COBIT ayudan a formalizar responsabilidades."
-      >
-        <div class="slide-header">
-          <span class="kicker">Gestión de servicios TI</span>
-          <span class="section-number">17</span>
-        </div>
-        <div class="slide-body">
-          <h2>Operar SafeData como servicio institucional</h2>
-          <div class="service-grid">
-            <div><strong>Incidentes</strong><span>Registrar, clasificar, resolver y documentar causa.</span></div>
-            <div><strong>Solicitudes</strong><span>Atender accesos, reportes o consultas autorizadas.</span></div>
-            <div><strong>Cambios</strong><span>Evaluar impacto, aprobar, probar y registrar versión.</span></div>
-            <div><strong>SLA</strong><span>Medir disponibilidad, tiempos de atención y desviaciones.</span></div>
-            <div><strong>Continuidad</strong><span>Backups, pruebas de restauración, RTO y RPO.</span></div>
-            <div><strong>Monitoreo</strong><span>Alertas, logs, consumo de recursos y errores.</span></div>
-          </div>
-          <table class="mini-table">
-            <thead><tr><th>Proceso</th><th>A</th><th>R</th><th>Soporte</th></tr></thead>
-            <tbody>
-              <tr><td>Definir catálogos</td><td>GSC</td><td>SP</td><td>Analista / OTICS</td></tr>
-              <tr><td>Cargar y validar reportes</td><td>SP</td><td>Analista</td><td>OTICS</td></tr>
-              <tr><td>Usuarios, backups y SLA</td><td>GSC / OTICS</td><td>OTICS</td><td>Analista</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Diapositiva 19 -->
-      <section
-        class="slide"
-        data-notes="Explicar que RACI evita que SafeData dependa de acuerdos informales: cada proceso debe tener responsables claros de negocio y soporte técnico."
+        data-notes="Explicar que RACI evita que la operación dependa de acuerdos informales y separa propiedad funcional, análisis y soporte técnico."
       >
         <div class="slide-header">
           <span class="kicker">RACI y responsabilidades</span>
-          <span class="section-number">18</span>
+          <span class="section-number">12</span>
         </div>
         <div class="slide-body">
-          <h2>La operación requiere responsabilidades explícitas</h2>
+          <h2>La operación requiere responsables explícitos</h2>
           <p class="subtitle">La matriz RACI separa propiedad funcional, análisis, operación y soporte técnico.</p>
-          <div class="raci-board">
+          <div class="raci-board compact-raci">
             <div class="raci-legend" aria-label="Leyenda RACI">
               <span><b>R</b> Responsable operativo</span>
               <span><b>A</b> Responsable final</span>
@@ -579,84 +385,34 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Definir catálogos</td>
-                  <td><span class="raci-pill accountable">A</span></td>
-                  <td><span class="raci-pill responsible">R</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill informed">I</span></td>
-                </tr>
-                <tr>
-                  <td>Cargar reportes</td>
-                  <td><span class="raci-pill informed">I</span></td>
-                  <td><span class="raci-pill accountable">A</span></td>
-                  <td><span class="raci-pill responsible">R</span></td>
-                  <td><span class="raci-pill informed">I</span></td>
-                </tr>
-                <tr>
-                  <td>Validar calidad de datos</td>
-                  <td><span class="raci-pill informed">I</span></td>
-                  <td><span class="raci-pill accountable">A</span></td>
-                  <td><span class="raci-pill responsible">R</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                </tr>
-                <tr>
-                  <td>Administrar usuarios y roles</td>
-                  <td><span class="raci-pill accountable">A</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill responsible">R</span></td>
-                </tr>
-                <tr>
-                  <td>Incidente técnico</td>
-                  <td><span class="raci-pill informed">I</span></td>
-                  <td><span class="raci-pill informed">I</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill accountable">R/A</span></td>
-                </tr>
-                <tr>
-                  <td>Backups y restauración</td>
-                  <td><span class="raci-pill informed">I</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill accountable">R/A</span></td>
-                </tr>
-                <tr>
-                  <td>Revisar SLA</td>
-                  <td><span class="raci-pill accountable">A</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill responsible">R</span></td>
-                </tr>
-                <tr>
-                  <td>Informar a CODISEC</td>
-                  <td><span class="raci-pill accountable">A</span></td>
-                  <td><span class="raci-pill responsible">R</span></td>
-                  <td><span class="raci-pill consulted">C</span></td>
-                  <td><span class="raci-pill informed">I</span></td>
-                </tr>
+                <tr><td>Definir catálogos</td><td><span class="raci-pill accountable">A</span></td><td><span class="raci-pill responsible">R</span></td><td><span class="raci-pill consulted">C</span></td><td><span class="raci-pill informed">I</span></td></tr>
+                <tr><td>Cargar y validar reportes</td><td><span class="raci-pill informed">I</span></td><td><span class="raci-pill accountable">A</span></td><td><span class="raci-pill responsible">R</span></td><td><span class="raci-pill consulted">C</span></td></tr>
+                <tr><td>Usuarios y roles</td><td><span class="raci-pill accountable">A</span></td><td><span class="raci-pill consulted">C</span></td><td><span class="raci-pill consulted">C</span></td><td><span class="raci-pill responsible">R</span></td></tr>
+                <tr><td>Incidente técnico</td><td><span class="raci-pill informed">I</span></td><td><span class="raci-pill informed">I</span></td><td><span class="raci-pill consulted">C</span></td><td><span class="raci-pill accountable">R/A</span></td></tr>
+                <tr><td>Backups y restauración</td><td><span class="raci-pill informed">I</span></td><td><span class="raci-pill consulted">C</span></td><td><span class="raci-pill consulted">C</span></td><td><span class="raci-pill accountable">R/A</span></td></tr>
+                <tr><td>Revisar SLA y reportar valor</td><td><span class="raci-pill accountable">A</span></td><td><span class="raci-pill responsible">R</span></td><td><span class="raci-pill consulted">C</span></td><td><span class="raci-pill responsible">R</span></td></tr>
               </tbody>
             </table>
           </div>
         </div>
       </section>
 
-      <!-- Diapositiva 20 -->
+      <!-- Diapositiva 14 -->
       <section
         class="slide"
-        data-notes="Presentar SLA y monitoreo como herramientas para medir el servicio, detectar fallas y sostener la operación inicial."
+        data-notes="Integrar gestión de servicio, SLA y monitoreo en una sola explicación orientada a operación inicial."
       >
         <div class="slide-header">
-          <span class="kicker">SLA y monitoreo técnico</span>
-          <span class="section-number">19</span>
+          <span class="kicker">Gestión del servicio, SLA y monitoreo</span>
+          <span class="section-number">13</span>
         </div>
         <div class="slide-body two-column">
           <div>
-            <h2>El servicio se mide con disponibilidad, atención y desempeño</h2>
+            <h2>SafeData debe operar como servicio TI institucional</h2>
             <div class="service-level-grid">
-              <div><strong>Disponibilidad</strong><span>>= 95% mensual, excluyendo mantenimiento programado comunicado.</span></div>
+              <div><strong>Disponibilidad</strong><span>&gt;= 95% mensual, excluyendo mantenimiento programado comunicado.</span></div>
               <div><strong>Carga de reportes</strong><span>Incidentes de carga atendidos en menos de 1 día hábil.</span></div>
-              <div><strong>Dashboard</strong><span>Respuesta <= 5 segundos en consultas comunes.</span></div>
+              <div><strong>Dashboard</strong><span>Respuesta &lt;= 5 segundos en consultas comunes.</span></div>
               <div><strong>Usuarios</strong><span>Altas, bajas y cambios bajo autorización funcional.</span></div>
               <div><strong>Incidentes</strong><span>Caída crítica atendida en menos de 4 horas hábiles.</span></div>
               <div><strong>Backups</strong><span>Respaldo programado y prueba de restauración trimestral.</span></div>
@@ -675,14 +431,14 @@
         </div>
       </section>
 
-      <!-- Diapositiva 21 -->
+      <!-- Diapositiva 15 -->
       <section
         class="slide"
-        data-notes="Explicar que continuidad no es solo copiar archivos: debe tener frecuencia, destino, retención, RPO, RTO, pruebas y responsables."
+        data-notes="Explicar que continuidad no es solo programar copias: debe tener frecuencia, destino, retención, RPO, RTO, pruebas y responsables."
       >
         <div class="slide-header">
           <span class="kicker">Continuidad y recuperación</span>
-          <span class="section-number">20</span>
+          <span class="section-number">14</span>
         </div>
         <div class="slide-body">
           <h2>Backups, recuperación y pruebas desde la primera fase</h2>
@@ -690,7 +446,7 @@
             <div><strong>Frecuencia</strong><span>Backup lógico diario si la carga es frecuente; mínimo semanal en etapa inicial.</span></div>
             <div><strong>Destino</strong><span>Almacenamiento cloud separado del servidor principal y copia local cifrada opcional.</span></div>
             <div><strong>Retención</strong><span>Cuatro copias semanales, tres mensuales y una anual como línea base.</span></div>
-            <div><strong>RPO</strong><span>24 horas en etapa inicial; reducible a 6 horas si la operación lo exige.</span></div>
+            <div><strong>RPO</strong><span>24 horas en etapa inicial; reducible si la operación lo exige.</span></div>
             <div><strong>RTO</strong><span>4 horas hábiles para restauración inicial ante incidente crítico.</span></div>
             <div><strong>Prueba</strong><span>Restauración trimestral con OTICS y validación funcional del analista.</span></div>
           </div>
@@ -698,65 +454,73 @@
         </div>
       </section>
 
-      <!-- Diapositiva 22 -->
+      <!-- Diapositiva 16 -->
       <section
         class="slide"
-        data-notes="Explicar que el dimensionamiento busca iniciar con recursos razonables y escalar si los registros, usuarios o necesidades de georreferenciación crecen."
+        data-notes="Presentar dimensionamiento base y los costos complementarios agregados en el informe: pruebas, VPN, NAS, seguridad, mantenimiento y carga histórica."
       >
         <div class="slide-header">
-          <span class="kicker">Dimensionamiento y presupuesto</span>
-          <span class="section-number">21</span>
+          <span class="kicker">Dimensionamiento, presupuesto y costos complementarios</span>
+          <span class="section-number">15</span>
         </div>
-        <div class="slide-body">
-          <h2>Escenario base con costos controlados</h2>
-          <div class="budget-grid">
-            <div class="budget-card metric-card"><strong>2 vCPU</strong><span>Procesamiento base para carga, validación y consultas concurrentes; evita sobredimensionar una primera fase.</span></div>
-            <div class="budget-card metric-card"><strong>4 GB RAM</strong><span>Margen para aplicación, PostgreSQL y carga de archivos sin separar servicios todavía.</span></div>
-            <div class="budget-card metric-card"><strong>80 GB SSD</strong><span>No es solo registros: cubre base, índices, logs, archivos fuente, exportaciones y respaldos iniciales.</span></div>
-            <div class="budget-card"><strong>S/ 3,200.00</strong><span>Costo único por configuración, carga inicial, capacitación y documentación de operación.</span></div>
-            <div class="budget-card"><strong>S/ 507.80</strong><span>Costo mensual base para cloud, backups, dominio y soporte mínimo durante la estabilización.</span></div>
-            <div class="budget-card"><strong>S/ 6,093.56</strong><span>Referencia anual recurrente para sostener el servicio antes de una ampliación institucional.</span></div>
+        <div class="slide-body budget-layout">
+          <h2>Escenario base con costos controlados y supuestos claros</h2>
+          <div class="budget-grid budget-compact">
+            <div class="budget-card metric-card"><strong>2 vCPU</strong><span>Procesamiento base para carga, validación y consultas concurrentes.</span></div>
+            <div class="budget-card metric-card"><strong>4 GB RAM</strong><span>Margen para aplicación, PostgreSQL y carga de archivos.</span></div>
+            <div class="budget-card metric-card"><strong>80 GB SSD</strong><span>Base, índices, logs, archivos fuente, exportaciones y respaldos iniciales.</span></div>
+            <div class="budget-card"><strong>S/ 3,200.00</strong><span>Costo único de configuración, carga inicial, capacitación y documentación.</span></div>
+            <div class="budget-card"><strong>S/ 507.80</strong><span>Costo mensual base para cloud, backups, dominio y soporte mínimo.</span></div>
+            <div class="budget-card"><strong>S/ 6,093.56</strong><span>Referencia anual recurrente para sostener la operación inicial.</span></div>
           </div>
-          <p class="tech-rationale budget-note">El dimensionamiento debe revisarse si se superan 5,000 registros al mes, crece la georreferenciación o el uso concurrente pasa de 15 usuarios.</p>
-          <div class="scenario-lane">
-            <div><strong>Bajo</strong><span>500 registros/mes · 60 MB/año · 10 GB recomendados</span></div>
-            <div><strong>Medio</strong><span>2,000 registros/mes · 240 MB/año · 20 a 30 GB</span></div>
-            <div><strong>Alto</strong><span>5,000 registros/mes · 600 MB/año · 50 GB o más</span></div>
+          <div class="cost-grid">
+            <div><strong>Ambiente de pruebas</strong><span>Validar cambios sin afectar producción.</span></div>
+            <div><strong>VPN / acceso seguro</strong><span>Controlar acceso desde sede principal y Simón Bolívar.</span></div>
+            <div><strong>Copia local / NAS</strong><span>Segunda copia administrada por OTICS.</span></div>
+            <div><strong>Prueba de seguridad</strong><span>Revisar accesos, HTTPS, secretos y exposición.</span></div>
+            <div><strong>Mantenimiento evolutivo</strong><span>Ajustes funcionales, mejoras y soporte posterior.</span></div>
+            <div><strong>Carga histórica inicial</strong><span>Limpieza, normalización y migración de datos previos.</span></div>
+          </div>
+          <p class="tech-rationale budget-note">La estimación distingue costos obligatorios, opcionales y de escalamiento para iniciar con inversión controlada y ampliar según uso real.</p>
+        </div>
+      </section>
+
+      <!-- Diapositiva 17 -->
+      <section
+        class="slide"
+        data-notes="Presentar el nuevo plan de implementación y operación inicial: fases, personal mínimo, capacitación, mantenimiento, pruebas y criterios de puesta en operación."
+      >
+        <div class="slide-header">
+          <span class="kicker">Plan de implementación y operación inicial</span>
+          <span class="section-number">16</span>
+        </div>
+        <div class="slide-body implementation-layout">
+          <h2>Ruta para pasar del prototipo al servicio municipal operativo</h2>
+          <div class="implementation-timeline">
+            <div><strong>1. Preparación</strong><span>Confirmar sedes, usuarios, catálogos, datos disponibles, responsables y alcance.</span></div>
+            <div><strong>2. Configuración técnica</strong><span>Cloud, dominio, HTTPS, Nginx, base de datos, variables de entorno y backups.</span></div>
+            <div><strong>3. Carga histórica</strong><span>Depurar archivos previos, normalizar catálogos y validar errores por lote.</span></div>
+            <div><strong>4. Capacitación</strong><span>Entrenar carga, consulta, roles, reportes, seguridad y buenas prácticas.</span></div>
+            <div><strong>5. Pruebas de aceptación</strong><span>Validar carga, dashboard, roles, rendimiento, seguridad y restauración.</span></div>
+            <div><strong>6. Operación inicial</strong><span>Monitorear uso, incidentes, calidad del dato, SLA y mejoras de estabilización.</span></div>
+          </div>
+          <div class="acceptance-grid">
+            <div><strong>Personal mínimo</strong><span>Responsable funcional GSC, analista de datos, soporte OTICS y usuario operador.</span></div>
+            <div><strong>Mantenimiento</strong><span>Correctivo, preventivo y evolutivo con registro de cambios y ventana comunicada.</span></div>
+            <div><strong>Puesta en operación</strong><span>Usuarios creados, datos iniciales cargados, backup probado y SLA comunicado.</span></div>
+            <div><strong>Criterio de éxito</strong><span>Servicio accesible, seguro, medible y validado por el área usuaria.</span></div>
           </div>
         </div>
       </section>
 
-      <!-- Diapositiva 23 -->
+      <!-- Diapositiva 18 -->
       <section
         class="slide"
-        data-notes="Mostrar que la sostenibilidad también depende de comunicar resultados, riesgos, disponibilidad y mejoras a los actores correctos con una frecuencia definida."
-      >
-        <div class="slide-header">
-          <span class="kicker">Comunicación a stakeholders</span>
-          <span class="section-number">22</span>
-        </div>
-        <div class="slide-body">
-          <h2>El servicio necesita reportar valor, riesgos y operación</h2>
-          <p class="subtitle">La comunicación formal convierte SafeData en un servicio municipal visible y gobernable.</p>
-          <div class="stakeholder-grid">
-            <div><strong>Gerencia Municipal / Alcaldía</strong><span>Avance, beneficios, riesgos y decisiones requeridas. Frecuencia: trimestral o por hito.</span></div>
-            <div><strong>Gerencia de Seguridad Ciudadana</strong><span>Indicadores, uso del sistema, brechas de datos y recomendaciones. Frecuencia: mensual.</span></div>
-            <div><strong>Subgerencia de Operaciones</strong><span>Zonas críticas, turnos, mapas y recomendaciones operativas. Frecuencia: semanal o mensual.</span></div>
-            <div><strong>OTICS</strong><span>Disponibilidad, incidentes, backups, alertas, cambios y seguridad. Frecuencia: mensual.</span></div>
-            <div><strong>CODISEC</strong><span>Tendencias y zonas críticas agregadas, sin datos sensibles. Frecuencia: mensual o trimestral.</span></div>
-            <div><strong>Usuarios internos</strong><span>Cambios funcionales, incidencias resueltas y buenas prácticas. Frecuencia: según necesidad.</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 24 -->
-      <section
-        class="slide"
-        data-notes="Cerrar destacando el valor para la municipalidad y la relación directa con Gestión de Recursos de TI: información municipal como servicio medible, seguro y sostenible."
+        data-notes="Cerrar con riesgos, indicadores y conclusiones, destacando que cloud permite acceso centralizado y continuidad entre sedes físicas separadas."
       >
         <div class="slide-header">
           <span class="kicker">Riesgos, indicadores y conclusiones</span>
-          <span class="section-number">23</span>
+          <span class="section-number">17</span>
         </div>
         <div class="slide-body final-grid">
           <div>
@@ -766,29 +530,29 @@
               <span>Acceso no autorizado</span>
               <span>Caída mayor a 4 horas</span>
               <span>Baja adopción</span>
-              <span>Interpretación incorrecta de predicción</span>
+              <span>Predicción mal interpretada</span>
             </div>
             <p class="conclusion">
-              La propuesta convierte información operativa municipal en indicadores, mapas, reportes y análisis preventivo, con responsabilidades, seguridad, continuidad y medición.
+              La arquitectura cloud facilita acceso centralizado, administración remota y continuidad entre la sede principal y el punto operativo Simón Bolívar, sin depender de un servidor físico ubicado en una sola oficina.
             </p>
             <div class="next-step-grid">
-              <span>MVP institucional</span>
-              <span>APIs protegidas</span>
-              <span>Lotes y errores por fila</span>
+              <span>Servicio institucional</span>
+              <span>Acceso seguro entre sedes</span>
+              <span>Datos trazables</span>
               <span>Backups probados</span>
-              <span>Modelo predictivo versionado</span>
+              <span>SLA medible</span>
             </div>
             <a class="system-link" href="https://safedata-intelligence.onrender.com" target="_blank" rel="noopener noreferrer">Acceder al sistema</a>
           </div>
           <div class="indicator-panel">
             <span class="panel-label">Metas iniciales</span>
             <ul>
-              <li>Disponibilidad mensual: >= 95%.</li>
-              <li>Dashboard: <= 5 segundos en consultas comunes.</li>
+              <li>Disponibilidad mensual: &gt;= 95%.</li>
+              <li>Dashboard: &lt;= 5 segundos en consultas comunes.</li>
               <li>Backups ejecutados: 100%.</li>
-              <li>Incidentes dentro del SLA: >= 90%.</li>
+              <li>Incidentes dentro del SLA: &gt;= 90%.</li>
               <li>RPO: 24 horas; RTO: 4 horas hábiles.</li>
-              <li>Filas rechazadas: <= 10% luego de estabilizar formatos.</li>
+              <li>Filas rechazadas: &lt;= 10% luego de estabilizar formatos.</li>
             </ul>
           </div>
         </div>
@@ -800,7 +564,7 @@
       <div class="progress-wrap" aria-hidden="true">
         <div class="progress-bar" id="progressBar"></div>
       </div>
-      <span class="slide-count" id="slideCount">1 / 24</span>
+      <span class="slide-count" id="slideCount">1 / 18</span>
       <button class="nav-button" id="nextSlide" type="button" aria-label="Diapositiva siguiente" title="Siguiente">›</button>
     </footer>
 
