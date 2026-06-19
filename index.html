@@ -198,23 +198,98 @@
       <!-- Diapositiva 5 -->
       <section
         class="slide"
-        data-notes="Mostrar que cada brecha se convierte en un recurso, control o proceso que debe gestionarse para operar la solución."
+        data-notes="Explicar que las brechas no son solo problemas técnicos, sino recursos de TI que deben gestionarse: datos, personas, infraestructura, seguridad, continuidad y medición."
       >
         <div class="slide-header">
           <span class="kicker">Brechas de recursos TI</span>
           <span class="section-number">04</span>
         </div>
+
         <div class="slide-body breach-layout">
           <h2>Brechas que deben convertirse en gestión operativa</h2>
-          <p class="subtitle">Cada brecha no se queda como diagnóstico: se traduce en un recurso TI, un control o una responsabilidad operativa.</p>
+          <p class="subtitle">
+            El diagnóstico muestra que SafeData no solo requiere software. Para operar como servicio municipal,
+            también necesita datos confiables, responsables definidos, infraestructura segura, continuidad y medición.
+          </p>
+
           <div class="breach-grid enhanced-breach">
-            <div><strong>Datos</strong><span>Calidad variable, catálogos no consolidados y linaje incompleto.</span><small>Gestión requerida: modelo, validaciones, lotes, errores por fila y gobierno del dato.</small></div>
-            <div><strong>Personas</strong><span>Responsables de dato, soporte, aprobación y operación aún deben formalizarse.</span><small>Gestión requerida: RACI, capacitación, responsable funcional y soporte OTICS.</small></div>
-            <div><strong>Infraestructura</strong><span>Se requiere servidor, HTTPS, base de datos, monitoreo, backup y escalamiento.</span><small>Gestión requerida: cloud, Nginx, PostgreSQL, alertas y capacidad inicial.</small></div>
-            <div><strong>Seguridad</strong><span>Roles, auditoría, secretos fuera del código y acceso seguro entre sedes.</span><small>Gestión requerida: mínimo privilegio, HTTPS/VPN, registros y control de exportaciones.</small></div>
-            <div><strong>Continuidad</strong><span>Backups, restauración, RPO, RTO, retención y pruebas documentadas.</span><small>Gestión requerida: pg_dump, snapshots, copia secundaria y restauración trimestral.</small></div>
-            <div><strong>Medición</strong><span>Disponibilidad, atención, uso, calidad del dato y cumplimiento de SLA.</span><small>Gestión requerida: tablero de servicio, umbrales, reportes y revisión mensual.</small></div>
+            <div>
+              <strong>Datos</strong>
+              <span>
+                La información puede estar en archivos Excel/CSV, pero con formatos distintos, valores repetidos,
+                zonas escritas de varias formas y baja trazabilidad del origen.
+              </span>
+              <small>
+                Aplicación en SafeData: catálogos oficiales, validación de columnas, registro de lotes,
+                errores por fila y gobierno del dato antes de alimentar dashboards o mapas.
+              </small>
+            </div>
+
+            <div>
+              <strong>Personas</strong>
+              <span>
+                El sistema necesita usuarios con funciones claras: quién carga datos, quién valida, quién aprueba,
+                quién consulta y quién atiende problemas técnicos.
+              </span>
+              <small>
+                Aplicación en SafeData: matriz RACI, roles funcionales, capacitación por perfil,
+                responsable de Seguridad Ciudadana y soporte técnico de OTICS.
+              </small>
+            </div>
+
+            <div>
+              <strong>Infraestructura</strong>
+              <span>
+                Para dejar de depender de archivos locales, se requiere una plataforma centralizada,
+                accesible desde sedes autorizadas y con capacidad suficiente para la operación inicial.
+              </span>
+              <small>
+                Aplicación en SafeData: VM cloud, Ubuntu Server, Nginx, HTTPS, PostgreSQL,
+                backups, monitoreo y posibilidad de escalar si aumentan usuarios o registros.
+              </small>
+            </div>
+
+            <div>
+              <strong>Seguridad</strong>
+              <span>
+                La información de seguridad ciudadana puede ser sensible, por lo que no todos los usuarios
+                deben ver, cargar, modificar o exportar lo mismo.
+              </span>
+              <small>
+                Aplicación en SafeData: mínimo privilegio, roles, auditoría, contraseñas seguras,
+                APIs protegidas, HTTPS/VPN y reportes agregados para actores externos.
+              </small>
+            </div>
+
+            <div>
+              <strong>Continuidad</strong>
+              <span>
+                El servicio debe poder recuperarse ante fallas, errores de carga, pérdida de datos
+                o caída del servidor, sin depender de una sola copia local.
+              </span>
+              <small>
+                Aplicación en SafeData: pg_dump, snapshots, almacenamiento separado,
+                copia secundaria opcional, RPO, RTO y pruebas trimestrales de restauración.
+              </small>
+            </div>
+
+            <div>
+              <strong>Medición</strong>
+              <span>
+                Si SafeData se gestiona como servicio TI, debe medirse su disponibilidad,
+                calidad del dato, atención de incidentes, uso y aporte operativo.
+              </span>
+              <small>
+                Aplicación en SafeData: SLA, indicadores de disponibilidad, tiempo de carga,
+                filas rechazadas, cumplimiento de backups, incidentes dentro del SLA y revisión mensual.
+              </small>
+            </div>
           </div>
+
+          <p class="statement compact-statement">
+            En resumen, cada brecha se transforma en una decisión de gestión: qué recurso se necesita,
+            quién lo administra, cómo se controla y cómo se mide.
+          </p>
         </div>
       </section>
 
